@@ -1,6 +1,6 @@
 # MATT JAEHN
 
-**Full Stack Engineer & Solutions Architect**
+**Full Stack Engineer**
 
 📧 <infoprol@icloud.com> | 📱 (901) 279-6443 | 📍 Memphis, TN 38103
 
@@ -90,7 +90,7 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 ## EDUCATION
 
 **Bachelor of Science, Discrete Mathematics**  
-*Georgia Institute of Technology*
+*Georgia Institute of Technology* | Atlanta, GA
 
 **Mathematics Coursework**  
 *The University of Memphis* | Memphis, TN
