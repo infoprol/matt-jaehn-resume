@@ -15,22 +15,46 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 ## CORE COMPETENCIES
 
-**Languages & Frameworks**
+### Automated Database Provisioning (CI/CD)
+
+- Using AWS CDK, implemented stacks to provision RDS resources
+  - Including both Aurora clusters and bare RDS instances (Postgres)
+  - Configuration was handled in a unified way with the overall (version controlled) CDK configuration
+  - Database credentials and other secrets implemented as AWS Secrets.  Cryptographic keys were handled with AWS KMS.
+  - Database initialization (DML, DCL) behavior that could not otherwise be handled through existing CDK/CloudFormation functionality was implemented as custom cloudformation resources, which were then integrated into the overall CDK flow
+  - Deployment pipeline was handled through gitlab triggers, fully integrated into the merge request review (when applicable for a given branch).  gitlab in turn executed a worker which used the aws cdk CLI to deploy the relevant stacks.  These pipeline runs were parameterized by environment with credentials stored in the gitlab secrets functionality.
+  - All deployable units were deployed as aws cloudformation stacks, to leverage the monitoring and admin functionality aws provided for stacks.
+  - DynamoDB stores were also implemented through CDK, with their schemas integrated into the same CDK configuration.  As access to DynamoDB was done entirely through aws AIM, generally no additional secrets were required.
+- Using AWS CDK, implemented a database migration solution using Amazon Database Migration Service
+  - Again, all components were deployed using CDK (except for the legacy on-prem DB2 database).  These components included the compute resources to execute the actual replication, the AWS adapters (called endpoints) for all source and target systems, as well as any required configuration and secrets.
+  - Both full load and "real time" on-going CDC replication were implemented.
+- Using AWS CDK, implemented and deployed AWS Redshift Clusters
+- Using AWS CDK, implemented AWS Athena Glue jobs and related resources as part of ETL pipelines
+- Researched a Proof of Concept for the use of Liquibase Database Change Management tool
+  - While I've never used it in production, I have worked with Liquibase as far as researching its capabilities.  It was especially appealing since it could handle Neo4j.  However, in the organization I was in at the time, Liquibase ultimately was not ultimately used.  This was largely because the main user app at the time used an ORM which implemented DDL version tracking as (ORM-specific) migration files.
+
+### Languages & Frameworks
 
 - JavaScript/TypeScript, Node.js, React (Next.js, Redux, RTK)
 - Golang, Python, C#/.NET (F#, C++), Java/Groovy, C/C++
 - Elixir, PL/SQL, T-SQL, Haskell, Clojure, Scala, Rust
 
-**Cloud & Infrastructure**
+### Cloud & Infrastructure
 
 - AWS (CDK, CloudFormation, ECS, Lambda, S3, DynamoDB, Kinesis)
 - Google Cloud Platform, Microsoft Azure
 - Infrastructure as Code, DevOps, CI/CD
 
-**Databases & Data Systems**
+### Databases & Data Systems
 
 - Oracle RDBMS, SQL Server, PostgreSQL, MySQL/MariaDB
-- MongoDB, DynamoDB, Neo4j
+  - Extensive experience in optimizing queries and stored procedures
+  - Extensive experience writing stored procedures in PL/SQL and T-SQL
+- MongoDB, DynamoDB, DocumentDB, Neo4j
+  - Writing extension modules for Neo4j (Java)
+  - Querying Neo4j using Cyper, Gremlin, as well as SDKs
+  - Optimization of DynamoDB indexing schemes
+  - leveraging atomic guarantees in Mongo/DocumentDB and DynamoDB to implement consistency invariants in applications
 - ETL Pipelines, Data Architecture, GraphQL
 - Lucene/ElasticSearch indexes
 
