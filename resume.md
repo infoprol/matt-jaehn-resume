@@ -22,6 +22,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 
 ## Highlighted Proficencies
 
+- **AWS Data Engineering Associate**
 - Extensive experience using a variety of Python backend web frameworks
   - Django, including Django's ORM
   - wsgi server applications
@@ -43,7 +44,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
   - Chakra UI, Tailwind CSS
   - NextJs
 - CI/CD
-  - see [### Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
+  - see [Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
 
 -----
 
@@ -75,10 +76,6 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 - Lucene/ElasticSearch indexes
 
 -----
-
-## CERTIFICATION
-
-- AWS Data Engineering Associate
 
 ## PROFESSIONAL EXPERIENCE
 
