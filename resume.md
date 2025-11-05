@@ -1,37 +1,53 @@
-# MATT JAEHN
-
-**Full Stack Engineer**
+# MATT JAEHN - Full Stack Engineer
 
 📧 <infoprol@icloud.com> | 📱 (901) 279-6443 | 📍 Memphis, TN 38103
 
 -----
-****
 
 ## PROFESSIONAL SUMMARY
 
-Results-driven Full Stack Engineer and Solutions Architect with 18+ years of experience designing and implementing enterprise-scale solutions. Proven track record of leading cross-functional teams, modernizing legacy systems, and delivering performance-critical applications. Expertise spans cloud architecture, data systems, and full-stack development with a strong foundation in computing theory and mathematics.
+Results-driven Full Stack Engineer with over a decade of experience designing and implementing enterprise-scale solutions. Proven track record of leading cross-functional teams, modernizing legacy systems, and delivering performance-critical applications. Expertise spans cloud architecture, data systems, and full-stack development with a strong foundation in computing theory and mathematics.
+
+## Experience in regulated environments
+
+- Specialty Pharmacy / Perscription Benifit Provider - Accredo
+- Medical device manufacture - uLab
+- Credit Union (NCUA regulated) - Orion Federal Credit Union
+
+## KEY ACHIEVEMENTS
+
+- Successfully architected and deployed solutions serving 6,000+ retail locations
+- Led teams of up to 20 engineers across multiple complex enterprise projects
+- Designed first cloud-native solutions for two different Fortune 500 companies
+
+## Highlighted Proficencies
+
+- Extensive experience using a variety of Python backend web frameworks
+  - Django, including Django's ORM
+  - wsgi server applications
+    - directly implemented (without framework)
+    - Flask
+  - asgi server applications
+    - FastAPI
+- Extensive experience using Python for:
+  - utility CLI programs ( "gluing" programs)
+  - AWS CDK projects
+  - various AWS lambda functions
+  - PySpark jobs
+  - Computer Vision
+    - AI Models
+    - Image processing (e.g., OpenCV, NumPy)
+- Extensive experience using React
+  - Redux
+  - React Toolkit
+  - Chakra UI, Tailwind CSS
+  - NextJs
+- CI/CD
+  - see [### Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
 
 -----
 
 ## CORE COMPETENCIES
-
-### Automated Database Provisioning (CI/CD)
-
-- Using AWS CDK, implemented stacks to provision RDS resources
-  - Including both Aurora clusters and bare RDS instances (Postgres)
-  - Configuration was handled in a unified way with the overall (version controlled) CDK configuration
-  - Database credentials and other secrets implemented as AWS Secrets.  Cryptographic keys were handled with AWS KMS.
-  - Database initialization (DML, DCL) behavior that could not otherwise be handled through existing CDK/CloudFormation functionality was implemented as custom cloudformation resources, which were then integrated into the overall CDK flow
-  - Deployment pipeline was handled through gitlab triggers, fully integrated into the merge request review (when applicable for a given branch).  gitlab in turn executed a worker which used the aws cdk CLI to deploy the relevant stacks.  These pipeline runs were parameterized by environment with credentials stored in the gitlab secrets functionality.
-  - All deployable units were deployed as aws cloudformation stacks, to leverage the monitoring and admin functionality aws provided for stacks.
-  - DynamoDB stores were also implemented through CDK, with their schemas integrated into the same CDK configuration.  As access to DynamoDB was done entirely through aws AIM, generally no additional secrets were required.
-- Using AWS CDK, implemented a database migration solution using Amazon Database Migration Service
-  - Again, all components were deployed using CDK (except for the legacy on-prem DB2 database).  These components included the compute resources to execute the actual replication, the AWS adapters (called endpoints) for all source and target systems, as well as any required configuration and secrets.
-  - Both full load and "real time" on-going CDC replication were implemented.
-- Using AWS CDK, implemented and deployed AWS Redshift Clusters
-- Using AWS CDK, implemented AWS Athena Glue jobs and related resources as part of ETL pipelines
-- Researched a Proof of Concept for the use of Liquibase Database Change Management tool
-  - While I've never used it in production, I have worked with Liquibase as far as researching its capabilities.  It was especially appealing since it could handle Neo4j.  However, in the organization I was in at the time, Liquibase ultimately was not ultimately used.  This was largely because the main user app at the time used an ORM which implemented DDL version tracking as (ORM-specific) migration files.
 
 ### Languages & Frameworks
 
@@ -60,11 +76,15 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 -----
 
+## CERTIFICATION
+
+- AWS Data Engineering Associate
+
 ## PROFESSIONAL EXPERIENCE
 
 ### **Data Architect** | *Orion Federal Credit Union* | Memphis, TN
 
-**September 2023 - May 2025**
+#### September 2023 - May 2025
 
 - **Architected unified data API** serving as single interface to core banking systems, improving system integration and reducing development complexity
 - **Researched and Prototyped OCR/Computer Vision** functionality for check and customer identity documents capture, evaluating various neural nets and image processing techniques
@@ -74,7 +94,7 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 ### **Senior Software Engineer - Manufacturing** | *uLab Systems LLC* | Memphis, TN
 
-**May 2022 - May 2023**
+#### May 2022 - May 2023
 
 - **Bootstrapped manufacturing automation** for robotized factory startup, integrating custom machinery with cloud-based web services
 - **Architected machine-to-cloud integration** solutions, designing adapter patterns to bridge proprietary machine interfaces with standardized domain objects
@@ -84,7 +104,7 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 ### **Lead Developer** | *AutoZone* | Memphis, TN
 
-**March 2019 - April 2022**
+#### March 2019 - April 2022
 
 - **Led search modernization initiative** for 6,000+ retail locations as part of company-wide Retail Acceleration program
 - **Architected distributed replenishment system** migrating from per-store local processing to centralized cloud architecture, improving efficiency and reducing maintenance overhead
@@ -94,7 +114,7 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 ### **Software Developer** | *ServiceMaster* | Memphis, TN
 
-**December 2014 - February 2019**
+#### December 2014 - February 2019
 
 - **Pioneered cloud-first architecture** designing and implementing serv-a.io, company’s first cloud-deployed RESTful API using AWS, Node.js, and MongoDB
 - **Built integration infrastructure** creating first webhook system for external service integration (Twilio, SendGrid) and internal application connectivity
@@ -103,7 +123,7 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 ### **Software Developer** | *Accredo Health, Inc* | Memphis, TN
 
-**January 2006 - July 2011**
+#### January 2006 - July 2011
 
 - **Automated Oracle Workflow operations** developing comprehensive PL/SQL script collection against OWF_MGR schema, allowing for automation of tasks previously requiring manual intervention
 - **Enhanced operational efficiency** providing granular control capabilities beyond Oracle Workflow Manager UI limitations
@@ -121,8 +141,22 @@ Results-driven Full Stack Engineer and Solutions Architect with 18+ years of exp
 
 -----
 
-## KEY ACHIEVEMENTS
+## Additional Detail
 
-- Successfully architected and deployed solutions serving 6,000+ retail locations
-- Led teams of up to 20 engineers across multiple complex enterprise projects
-- Designed first cloud-native solutions for two different Fortune 500 companies
+### Automated Database Provisioning (CI/CD)
+
+- Using AWS CDK, implemented stacks to provision RDS resources
+  - Including both Aurora clusters and bare RDS instances (Postgres)
+  - Configuration was handled in a unified way with the overall (version controlled) CDK configuration
+  - Database credentials and other secrets implemented as AWS Secrets.  Cryptographic keys were handled with AWS KMS.
+  - Database initialization (DML, DCL) behavior that could not otherwise be handled through existing CDK/CloudFormation functionality was implemented as custom cloudformation resources, which were then integrated into the overall CDK flow
+  - Deployment pipeline was handled through gitlab triggers, fully integrated into the merge request review (when applicable for a given branch).  gitlab in turn executed a worker which used the aws cdk CLI to deploy the relevant stacks.  These pipeline runs were parameterized by environment with credentials stored in the gitlab secrets functionality.
+  - All deployable units were deployed as aws cloudformation stacks, to leverage the monitoring and admin functionality aws provided for stacks.
+  - DynamoDB stores were also implemented through CDK, with their schemas integrated into the same CDK configuration.  As access to DynamoDB was done entirely through aws AIM, generally no additional secrets were required.
+- Using AWS CDK, implemented a database migration solution using Amazon Database Migration Service
+  - Again, all components were deployed using CDK (except for the legacy on-prem DB2 database).  These components included the compute resources to execute the actual replication, the AWS adapters (called endpoints) for all source and target systems, as well as any required configuration and secrets.
+  - Both full load and "real time" on-going CDC replication were implemented.
+- Using AWS CDK, implemented and deployed AWS Redshift Clusters
+- Using AWS CDK, implemented AWS Athena Glue jobs and related resources as part of ETL pipelines
+- Researched a Proof of Concept for the use of Liquibase Database Change Management tool
+  - While I've never used it in production, I have worked with Liquibase as far as researching its capabilities.  It was especially appealing since it could handle Neo4j.  However, in the organization I was in at the time, Liquibase ultimately was not ultimately used.  This was largely because the main user app at the time used an ORM which implemented DDL version tracking as (ORM-specific) migration files.
