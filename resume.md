@@ -10,7 +10,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 
 ## Experience in regulated environments
 
-- Specialty Pharmacy / Perscription Benifit Provider - Accredo
+- Specialty Pharmacy / Prescription Benefit Provider - Accredo
 - Medical device manufacture - uLab
 - Credit Union (NCUA regulated) - Orion Federal Credit Union
 
@@ -20,7 +20,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 - Led teams of up to 20 engineers across multiple complex enterprise projects
 - Designed first cloud-native solutions for two different Fortune 500 companies
 
-## Highlighted Proficencies
+## Highlighted Proficiencies
 
 - **AWS Data Engineering Associate**
 - Extensive experience using a variety of Python backend web frameworks
