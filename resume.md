@@ -53,6 +53,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 ### Languages & Frameworks
 
 - JavaScript/TypeScript, Node.js, React (Next.js, Redux, RTK)
+- Java, Java Bootstrap, Spark
 - Golang, Python, C#/.NET (F#, C++), Java/Groovy, C/C++
 - Elixir, PL/SQL, T-SQL, Haskell, Clojure, Scala, Rust
 
