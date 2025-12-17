@@ -6,45 +6,7 @@
 
 ## PROFESSIONAL SUMMARY
 
-Results-driven Full Stack Engineer with over a decade of experience designing and implementing enterprise-scale solutions. Proven track record of leading cross-functional teams, modernizing legacy systems, and delivering performance-critical applications. Expertise spans cloud architecture, data systems, and full-stack development with a strong foundation in computing theory and mathematics.
-
-## Experience in regulated environments
-
-- Specialty Pharmacy / Prescription Benefit Provider - Accredo
-- Medical device manufacture - uLab
-- Credit Union (NCUA regulated) - Orion Federal Credit Union
-
-## KEY ACHIEVEMENTS
-
-- Successfully architected and deployed solutions serving 6,000+ retail locations
-- Led teams of up to 20 engineers across multiple complex enterprise projects
-- Designed first cloud-native solutions for two different Fortune 500 companies
-
-## Highlighted Proficiencies
-
-- **AWS Data Engineering Associate**
-- Extensive experience using a variety of Python backend web frameworks
-  - Django, including Django's ORM
-  - wsgi server applications
-    - directly implemented (without framework)
-    - Flask
-  - asgi server applications
-    - FastAPI
-- Extensive experience using Python for:
-  - utility CLI programs ( "gluing" programs)
-  - AWS CDK projects
-  - various AWS lambda functions
-  - PySpark jobs
-  - Computer Vision
-    - AI Models
-    - Image processing (e.g., OpenCV, NumPy)
-- Extensive experience using React
-  - Redux
-  - React Toolkit
-  - Chakra UI, Tailwind CSS
-  - NextJs
-- CI/CD
-  - see [Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
+Results-driven Full Stack Engineer with over a decade of experience designing and implementing enterprise-scale solutions. Proven track record of leading cross-functional teams, modernizing legacy systems, driving greenfield projects, and delivering performance-critical applications. Expertise spans cloud architecture, data systems, and full-stack development with a strong foundation in computing theory and mathematics.
 
 -----
 
@@ -54,11 +16,12 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 
 - JavaScript/TypeScript, Node.js, React (Next.js, Redux, RTK)
 - Java, Java Bootstrap, Spark
-- Golang, Python, C#/.NET (F#, C++), Java/Groovy, C/C++
+- Golang, Python, Django, C#/.NET (F#, C++), Java/Groovy, C/C++
 - Elixir, PL/SQL, T-SQL, Haskell, Clojure, Scala, Rust
 
 ### Cloud & Infrastructure
 
+- **AWS Data Engineering Associate**
 - AWS (CDK, CloudFormation, ECS, Lambda, S3, DynamoDB, Kinesis)
 - Google Cloud Platform, Microsoft Azure
 - Infrastructure as Code, DevOps, CI/CD
@@ -141,6 +104,12 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 
 ## Additional Detail
 
+### KEY ACHIEVEMENTS
+
+- Successfully architected and deployed solutions serving 6,000+ retail locations
+- Led teams of up to 20 engineers across multiple complex enterprise projects
+- Designed first cloud-native solutions for two different Fortune 500 companies
+
 ### Automated Database Provisioning (CI/CD)
 
 - Using AWS CDK, implemented stacks to provision RDS resources
@@ -158,3 +127,30 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 - Using AWS CDK, implemented AWS Athena Glue jobs and related resources as part of ETL pipelines
 - Researched a Proof of Concept for the use of Liquibase Database Change Management tool
   - While I've never used it in production, I have worked with Liquibase as far as researching its capabilities.  It was especially appealing since it could handle Neo4j.  However, in the organization I was in at the time, Liquibase ultimately was not ultimately used.  This was largely because the main user app at the time used an ORM which implemented DDL version tracking as (ORM-specific) migration files.
+
+### Highlighted Proficiencies
+
+- Extensive experience using a variety of Python backend web frameworks
+  - Django, including Django's ORM
+  - wsgi server applications
+    - directly implemented (without framework)
+    - Flask
+  - asgi server applications
+    - FastAPI
+- Extensive experience using Python for:
+  - utility CLI programs ( "gluing" programs)
+  - AWS CDK projects
+  - various AWS lambda functions
+  - PySpark jobs
+  - Computer Vision
+    - AI Models
+    - Image processing (e.g., OpenCV, NumPy)
+- Extensive experience using React
+  - Redux
+  - React Toolkit
+  - Chakra UI, Tailwind CSS
+  - NextJs
+- CI/CD
+  - see [Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
+
+
