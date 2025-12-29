@@ -43,7 +43,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 
 ## PROFESSIONAL EXPERIENCE
 
-### **Data Architect** | *Orion Federal Credit Union* | Memphis, TN
+### **Data Engineer** | *Orion Federal Credit Union* | Memphis, TN
 
 #### September 2023 - May 2025
 
@@ -110,7 +110,7 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
 - Led teams of up to 20 engineers across multiple complex enterprise projects
 - Designed first cloud-native solutions for two different Fortune 500 companies
 
-### Automated Database Provisioning (CI/CD)
+### Automated Database Provisioning (CDK)
 
 - Using AWS CDK, implemented stacks to provision RDS resources
   - Including both Aurora clusters and bare RDS instances (Postgres)
@@ -150,7 +150,5 @@ Results-driven Full Stack Engineer with over a decade of experience designing an
   - React Toolkit
   - Chakra UI, Tailwind CSS
   - NextJs
-- CI/CD
-  - see [Automated Database Provisioning (CI/CD)](#automated-database-provisioning-cicd) below
 
 
